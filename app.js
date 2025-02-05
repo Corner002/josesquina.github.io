@@ -1,6 +1,3 @@
-import React from 'react';
-import { BookOpen } from 'lucide-react';
-
 const PersonalWebsite = () => {
   return (
     <div className="min-h-screen bg-gray-100">
@@ -15,11 +12,6 @@ const PersonalWebsite = () => {
       <section className="bg-white">
         <div className="max-w-4xl mx-auto px-4 py-16">
           <div className="text-center">
-            <img 
-              src="/api/placeholder/150/150"
-              alt="José Esquina"
-              className="mx-auto rounded-full mb-8"
-            />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               José Esquina
             </h2>
@@ -42,13 +34,10 @@ const PersonalWebsite = () => {
               que combina la pasión por la agricultura con un fuerte enfoque en tecnología 
               y análisis de datos. Mi experiencia única fusiona el conocimiento profundo 
               del sector agrícola con habilidades avanzadas en análisis de datos y 
-              herramientas tecnológicas. Como productor independiente de café y 
-              especialista en investigación, aplico métodos científicos y tecnológicos 
-              para optimizar la producción agrícola y el desarrollo sostenible.
+              herramientas tecnológicas.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <BookOpen className="mr-2" />
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Habilidades Técnicas
             </h2>
             <div className="space-y-6">
@@ -89,4 +78,4 @@ const PersonalWebsite = () => {
   );
 };
 
-export default PersonalWebsite;
+ReactDOM.render(<PersonalWebsite />, document.getElementById('root'));
